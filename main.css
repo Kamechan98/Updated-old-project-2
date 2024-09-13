@@ -1,0 +1,168 @@
+header {
+    border: 3px solid #424242;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    gap: 2px;
+    text-align: center;
+    background-color: #181818;
+    color: white;
+
+}
+body {
+    background-color: #242424;
+}
+
+#content {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+#box1 {
+    border: 2px solid #424242;
+    margin: 10px;
+    height: 900px;
+    background-color:#770a20;
+    border-radius: 15px;
+    color: white;
+}
+
+#box3{
+    border: 2px solid #424242;
+    margin: 10px;
+    height: 900px;
+    background-color:#770a20;
+    border-radius: 15px;
+    color: white;
+}
+
+#box2 {
+    border: 2px solid #424242;
+    margin: 10px;
+    background-color: #770a20;
+    height: 900px;
+    border-radius: 15px;
+    color: white;
+}
+
+
+.center {
+    display: block;
+    margin-left: 15%;
+    margin-right: 0%;
+    margin-top: 5%;
+    width: 70%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 18px;
+    border: 1px solid #424242;
+    color: white;
+   
+}
+
+
+li{
+    position: relative;
+    right: 20px;
+    list-style-type: square;
+}
+
+@media screen and (max-width:699px) {
+    #content {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .box1, .box3 {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        height: 2000px;
+        font-size: 15px;
+    }
+
+    .box2 {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        height: 1000px;
+
+        }
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 899px) {
+
+    #content {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .box1, .box3 {
+        width: 20%;
+        padding: 15px;
+    }
+
+    #box1 {
+        float: right;
+    }
+    
+    #box3 {
+        float: left;
+    }
+
+    .box2 {
+        width: 35%;
+        padding: 15px;
+        display: inline-block;
+        position: absolute;
+        left: 29%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    /* #content {
+        flex-direction: row;
+    } */
+    .box1, .box3 {
+        width: 18%;
+        display: inline-block;
+        padding: 15px;
+    }
+
+    #box1{
+        float: left;
+    }
+    #box3{
+        float: right;
+    }
+
+    .box2 {
+        width: 40%;
+        display: inline-block;
+        padding: 15px;
+        position: absolute;
+        right: 28%;
+    }
+
+
+    img{
+        width: 100%;
+        /* align-items: center; */
+    }
+    .center {
+        display: block;
+        width: 80%;
+        /* height: 80%; */
+    }
+    
+}
